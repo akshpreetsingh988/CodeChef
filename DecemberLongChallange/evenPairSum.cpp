@@ -1,17 +1,22 @@
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int t;
-    cin >> t;
-    while (t--)
-    {
-        long long a, b;
-        cin >> a >> b;
-        long long i=1, j=1;
-        long long res = (a/2)*(b/2);
-        long long f_res = res+=((a + 1) / 2) * ((b + 1) / 2);
-        cout<<f_res<<endl;
-
-    }
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		long long int a, b;
+		cin>>a>>b;
+		if(a*b%2==0)
+		{
+		   cout<<(a*b)/2<<endl;
+		}
+		else
+		{
+		    cout<<(a*b)/2+1<<endl;
+		}
+	
+	}
+	return 0;
 }
